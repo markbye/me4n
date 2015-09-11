@@ -1,0 +1,22 @@
+ <% include head %>
+  <body>
+    <h1>Hello World</h1>
+    <p>Welcome to
+    <% if(titles.length) { %>
+    <ul>
+        <% titles.forEach(function(t){ %>
+        <li>
+            <span><%= t.pathname%></span>
+            <b><%= t.pointx %></b>
+            <i><%= t.pointy %></i>
+        </li>
+
+       <%  })%>
+    </ul>
+
+    <% } %>
+    </p>
+    <p><a href="login">登陆</a></p>
+    <p><a href="addinfo">添加</a></p>
+  </body>
+</html>
